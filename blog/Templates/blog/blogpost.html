@@ -1,16 +1,16 @@
 {% extends 'blog/basic.html' %}
 
 {% block body %}
-<div class="container">
+<div class="containerrounded" style="background-color: #708fa899; color: #fff;">
     <div class="row mt-4">
-        <div class="col-md-8 blog-main">
+        <div class="col-md-8 blog-main" style="border-right: 2px solid;">
             <h3 class="font-italic">
                 {{post.title}}
             </h3>
 
             <div class="blog-post">
                 <h2 class="blog-post-title">{{post.heading0}}</h2>
-                <p class="blog-post-meta">January 1, 2014 by <a href="#">Blog Publisher</a></p>
+                <p class="blog-post-meta">January 1, 2014 by <a href="#" style="color: #aacefa;">Blog Publisher</a></p>
                 <div class="fb-like" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div><br>
 
                 <p>{{post.chead0}}</p>
@@ -20,7 +20,7 @@
                 <p>{{post.chead1}}</p>
                 <h2>{{post.head2}}</h2>
                 <p>{{post.chead2}}</p>
-                <div class="fb-comments" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-numposts="2"></div>
+                <div class="fb-comments"  data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-numposts="2"></div>
                 
                
             </div><!-- /.blog-post -->
@@ -30,10 +30,10 @@
 
         </div><!-- /.blog-main -->
 
-        <aside class="col-md-4 blog-sidebar">
-            <div class="p-4 mb-3 bg-light rounded">
-                <h4 class="font-italic">About</h4>
-                <p class="mb-0">My Cart <em>started out as a small project and is now</em> the fastest growing e-commerce stores of all times in india and abroad.</p>
+        <aside class="col-md-4 blog-sidebar border-left-2" style=" margin-top: inherit;">
+            <div class="p-4 mb-3 rounded" style="background-color: #708fa899; color: #fff;">
+                <h4 class="font-italic" style="color: #aacefa;">About</h4>
+                <p class="mb-0" style="color: #aacefa;">My Cart <em>started out as a small project and is now</em> the fastest growing e-commerce stores of all times in india and abroad.</p>
                 <div class="my-3 fb-share-button" data-href="http://127.0.0.1:8000/blog/blogpost/{{post.post_id}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A8000%2Fblog%2Fblogpost%2F4&src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
             </div>
 
@@ -41,10 +41,10 @@
 
             <div class="p-4">
                 <h4 class="font-italic">Elsewhere</h4>
-                <ol class="list-unstyled">
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
+                <ol class="list-unstyled" style="color: #aacefa;">
+                    <li><a href="#" style="color: #aacefa;">GitHub</a></li>
+                    <li><a href="#" style="color: #aacefa;">Twitter</a></li>
+                    <li><a href="#" style="color: #aacefa;">Facebook</a></li>
                 </ol>
             </div>
         </aside><!-- /.blog-sidebar -->
