@@ -2,7 +2,7 @@
 
 {% block title%} Contact Us - My Cart{% endblock %}
 {% block body %}
-<div class="container my-3">
+<div class="container my-3 rounded" style="background-color: #708fa899; color: #fff;">
     <h3>Contact Us</h3>
     <form action="/shop/contact/" method="post">{% csrf_token %}
   <div class="form-group">
@@ -24,7 +24,7 @@
     <label for="desc">How May We Help You?</label>
     <textarea class="form-control" id="desc" name='desc' rows="3"></textarea>
   </div>
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn mb-2" style="background-color: #4A6E8C; color: #fff;">Submit</button>
 </form>
 
 

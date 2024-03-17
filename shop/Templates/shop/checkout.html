@@ -1,13 +1,13 @@
 {% extends 'shop/basic.html' %}
 {% block title%} Checkout - My Cart{% endblock %}
 {% block body %}
-<div class="container">
+<div class="container rounded" style="background-color: #708fa899; color: #fff;">
     <div class="col my-4">
         <h2>Step 1 - My Cart Express Checkout - Review Your Cart Items</h2>
         <div class="my-4">
-            <ul class="list-group" id="items">
+            <ul class="list-group" id="items" style="color:#6c757d">
             </ul>
-            <nav aria-label="breadcrumb">
+            <nav aria-label="breadcrumb" >
                 <ol class="breadcrumb mt-3">
                     <li class="breadcrumb-item active" aria-current="page">Your Cart Total Is <b>Rs.<span id="totalPrice"></b>  </span>Enter your details below & place your order. Thanks for using My Cart!</li>
                 </ol>
@@ -56,7 +56,7 @@
                 <label for="inputZip">Phone Number</label>
                 <input type="tel" class="form-control" id="phone" name="phone">
             </div>
-            <button type="submit" class="btn btn-primary">Place Order</button>
+            <button type="submit" class="btn mb-2" style="background-color: #4A6E8C; color: #fff;">Place Order</button>
         </form>
     </div>
 </div>
